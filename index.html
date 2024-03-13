@@ -3,71 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Cost</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="./assets/js/app.js"></script>
-
-    <title>Document</title>
+    <script defer src="./assets/javascript/app.js"></script>
 </head>
 <body>
     <div class="outer-container">
         <h2>Split Cost</h2>
-        <div class="unsettled-cotainer">
-            <h6>Unsettled Amount per User</h6>
+        <div class="unsettled-container">
+            <h6>Unsettled Amount per user</h6>
             <div>
                 <div>$60.00</div>
-                <button>SETTLE NOW</button>
+                <button class="primary-button">SETTLE NOW</button>
             </div>
         </div>
-
         <div class="users-container">
-            <div><img width="112" src="https://api.multiavatar.com/BinxBond.svg" alt=""></div>
-            <div><img width="112"  src="https://api.multiavatar.com/BinxBond.svg" alt=""></div>
-            <div><img width="112" src="https://api.multiavatar.com/BinxBond.svg" alt=""></div>
-            <div><img width="112" src="https://api.multiavatar.com/BinxBond.svg" alt=""></div>
+            <div><img width="112" src="https://api.multiavatar.com/Binx Bond.svg" alt=""></div>
+            <div><img width="112" src="https://api.multiavatar.com/stefan.svg" alt=""></div>
+            <div><img width="112" src="https://api.multiavatar.com/kathrin.svg" alt=""></div>
+            <div><img width="112" src="https://api.multiavatar.com/zoe.svg" alt=""></div>
         </div>
-
         <form class="new-container">
             <div>
-                <label> Description</label>
-                <textarea id="description" cols="30" rows="10"></textarea>
+                <label for="description">Description<span>*</span></label>
+                <textarea id="description" rows="3"></textarea>
             </div>
-
-            <div>
-                <label>Amount</label>
-               <input type="number" id="amount">
-            </div>
-            <button>ADD NEW</button>
-
-        </form>
-
-        <div class="expense-container">
             <div>
                 <div>
-                    <span>Woolworths Shopping</span>
-                    <date>12 march 2024 02:30:00</date>
+                    <label for="amount">Amount$<span>*</span></label>
+                    <input type="number" id="amount">
                 </div>
+                <button>ADD NEW</button>
+            </div>
+        </form>
+        <div class="expenses-container">
+            <div>
                 <div>
                     <span>Woolworths Shopping</span>
-                    <date>12 march 2024 02:30:00</date>
-                    <div>
-                        <span>Woolworths Shopping</span>
-                        <date>12 march 2024 02:30:00</date>
-                    </div>
-                    <div>
-                        <span>Woolworths Shopping</span>
-                        <date>12 march 2024 02:30:00</date>
-                    </div>
-                    <div>
-                        <span>Woolworths Shopping</span>
-                        <date>12 march 2024 02:30:00</date>
-                    </div>
-            
+                    <time>12 March 2024 02:30:00</time>
+                </div>
+                <div class="amount">
+                    $120.00
+                </div>
             </div>
-        </div>
-        <div class="expenses-footer">
-            <button>View all</button>
+            <div>
+                <div>
+                    <span>Woolworths Shopping</span>
+                    <time>12 March 2024 02:30:00</time>
+                </div>
+                <div class="amount">
+                    $120.00
+                </div>
+            </div>
+            <div class="settled-row">
+                <div>
+                    <span>Woolworths Shopping</span>
+                    <time>12 March 2024 02:30:00</time>
+                </div>
+                <div class="amount">
+                    $120.00
+                </div>
+            </div>
+            <div class="settled-row">
+                <div>
+                    <span>Woolworths Shopping</span>
+                    <time>12 March 2024 02:30:00</time>
+                </div>
+                <div class="amount">
+                    $120.00
+                </div>
+            </div>
+            <div class="settled-row">
+                <div>
+                    <span>Woolworths Shopping</span>
+                    <time>12 March 2024 02:30:00</time>
+                </div>
+                <div class="amount">
+                    $120.00
+                </div>
+            </div>
+            <div class="expenses-footer">
+                <button class="unstyling-button">View All</button>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
